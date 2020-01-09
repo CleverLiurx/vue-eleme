@@ -14,7 +14,7 @@ export default {
     data() {
         return {
             tabbarData: [
-                { title: '首页', icon: 'home', path: '/home' },
+                { title: '外卖', icon: 'home', path: '/home' },
                 { title: '订单', icon: 'align-justify', path: '/order' },
                 { title: '我的', icon: 'user', path: '/me' }
             ]

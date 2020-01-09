@@ -42,6 +42,9 @@
         <div class="about-me">
             <span>联系作者</span>
         </div>
+        <div class="records">
+            <a href="http://www.beian.miit.gov.cn">冀ICP备19016004号</a>
+        </div>
     </div>
 </template>
 
@@ -217,5 +220,17 @@ export default {
     text-align: center;
     margin-top: 8vw;
     color: #999;
+}
+.records {
+    position: fixed;
+    bottom: 2vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.records a {
+    color: #ccc;
+    font-size: 0.15rem;
+    text-decoration: none;
 }
 </style>
