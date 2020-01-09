@@ -28,7 +28,7 @@ export default {
                 this.second--;
                 if (this.second == 0) {
                     if(this.isWeiXin()) {
-                        const url = 'https://payjx.cn/api/openid?mchid=1568951701&callback_url=http://woyou.cool/home';
+                        const url = 'https://payjx.cn/api/openid?mchid=1568951701&callback_url=http://eleme.woyou.cool/home';
                         window.location.href = url + '?timestamp=' + ((new Date()).getTime() + Math.random());
                     } else {
                         this.$router.push('/home');

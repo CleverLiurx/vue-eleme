@@ -2,9 +2,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import './axios';
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
+import './axios';
 import showMsg from './plugin/showMsg'
 import api from './api/index'
 // import './plugin/vconsoleUtil.js'
