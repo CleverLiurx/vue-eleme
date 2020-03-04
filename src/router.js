@@ -3,8 +3,6 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
-// export default new Router({
-//
 const router = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
@@ -13,10 +11,6 @@ const router = new Router({
     routes: [
         {
             path: '/',
-            // 有子路由 不需要设置name
-            // name: 'index',
-            // component: Index
-            /* 按需加载 */
             component: () => import('./views/Index.vue'),
             children: [
                 {
@@ -135,7 +129,7 @@ const router = new Router({
         }
     ]
 });
-// 设置路由守卫
+// 设置路由守卫 -> 第一次打开 进入welcome页面  未登录进入login页面
 router.beforeEach((to, from, next) => {
     const enterFlag = !!sessionStorage.enter_flag;
     if (to.path == '/welcome') {
